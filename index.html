@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>dustxod Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="auth" class="auth-card">
+    <h2>Sign in</h2>
+    <input id="email" type="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <button id="signupBtn">Sign up</button>
+    <button id="googleBtn">Sign in with Google</button>
+  </div>
+
+  <div id="app" class="app" style="display:none;">
+    <aside class="sidebar">
+      <h3>dustxod</h3>
+      <div id="userBox"></div>
+      <button id="logoutBtn">Logout</button>
+    </aside>
+
+    <main class="main">
+      <div id="messages" class="messages"></div>
+      <div class="composer">
+        <input id="msgInput" type="text" placeholder="Message #general">
+        <input id="fileInput" type="file" accept="image/*">
+        <button id="sendBtn">Send</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script type="module" src="script.js"></script>
+</body>
+        </html>
